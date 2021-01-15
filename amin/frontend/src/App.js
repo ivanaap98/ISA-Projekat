@@ -1,10 +1,10 @@
 import { BrowserRouter,Route,Switch} from "react-router-dom"
-import Home from "./Home";
-import Registracija from "./Registracija";
-import PretragaApoteka from "./PretragaApoteka";
-import PretragaLekova from "./PretragaLekova";
-import Login from "./Login"
-import NavBar from "./NavBar";
+import Home from "./HomePage/Home";
+import Registracija from "./HomePage/Registracija";
+import PretragaApoteka from "./HomePage/PretragaApoteka";
+import PretragaLekova from "./HomePage/PretragaLekova";
+import Login from "./HomePage/Login"
+import NavBar from "./HomePage/NavBar";
 
 function App() {
   return (
