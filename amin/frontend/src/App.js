@@ -1,9 +1,9 @@
 import { BrowserRouter,Route,Switch} from "react-router-dom"
 import Home from "./HomePage/Home";
-import Registracija from "./HomePage/Registracija";
+import Registracija from "./HomePage/Registracija/Registracija";
 import PretragaApoteka from "./HomePage/PretragaApoteka";
 import PretragaLekova from "./HomePage/PretragaLekova";
-import Login from "./HomePage/Login"
+import Login from "./HomePage/Login/Login"
 import NavBar from "./HomePage/NavBar";
 
 function App() {
