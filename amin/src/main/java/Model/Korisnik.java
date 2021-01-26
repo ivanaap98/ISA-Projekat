@@ -1,9 +1,24 @@
 package Model;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
+@Entity
+@Table(name="korisnici")
 public class Korisnik {
-  String email;
+ @Id
+ @GeneratedValue(strategy=GenerationType.IDENTITY)
   int id;
+ @Column(name="email")
+  String email;
+ @Column(name="lozinka")
   String lozinka;
+  public Korisnik()  {
+	  
+  }
 public String getEmail() {
 	return email;
 }

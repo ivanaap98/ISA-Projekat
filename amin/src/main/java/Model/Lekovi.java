@@ -1,18 +1,42 @@
 package Model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="lekovi")
 public class Lekovi {
-  String naziv;
-  int kolicina;
+  @Id
+  @GeneratedValue(strategy=GenerationType.IDENTITY)
   int id;
+ @Column(name="naziv")
+  String naziv;
+ @Column(name="kolicina")
+  int kolicina;
+ @Column(name="id_zamenski")
   int id_zamenski;
+ @Column(name="br_poena")
   int br_poena;
+ @Column(name="vrsta_leka")
   String vrsta_leka;
+ @Column(name="oblik_leka")
   String oblik_leka;
+@Column(name="sastav")
   String sastav;
+@Column(name="proizvodjac")
   String proizvodjac;
+@Column(name="rezim_izdavanja")
   boolean rezim_izdavanja;
+@Column(name="dodatne_napomene")
   String dodatne_napomene;
+@Column(name="alergeni")
   String alergeni;
+public Lekovi() {
+	}
 public String getNaziv() {
 	return naziv;
 }

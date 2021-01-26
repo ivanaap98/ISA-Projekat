@@ -1,6 +1,7 @@
 package Model;
 
 public class Zaposleni {
+  
   String ime;
   String prezime;
 public String getIme() {
@@ -24,5 +25,7 @@ public Zaposleni(String ime, String prezime) {
 	this.ime = ime;
 	this.prezime = prezime;
 }
+
+
   
 }
