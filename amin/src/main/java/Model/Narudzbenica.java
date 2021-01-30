@@ -9,7 +9,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 @Entity
 @Table(name="narudzbenica")
-public class Narudzbenica {
+public class Narudzbenica extends Lekovi {
   @Id
   @GeneratedValue(strategy=GenerationType.IDENTITY)
   int id;
@@ -52,14 +52,20 @@ public String toString() {
 	return "Narudzbenica [id=" + id + ", datum=" + datum + ", rok_za_ponude=" + rok_za_ponude + ", nove_kolicine="
 			+ nove_kolicine + ", nov_lek=" + nov_lek + "]";
 }
-public Narudzbenica(int id, Date datum, Date rok_za_ponude, int nove_kolicine, boolean nov_lek) {
-	super();
-	this.id = id;
+public Narudzbenica(int cena, int id_cenovnik, int id, String naziv, int kolicina, int id_zamenski, int br_poena,
+		String vrsta_leka, String oblik_leka, String sastav, String proizvodjac, boolean rezim_izdavanja,
+		String dodatne_napomene, String alergeni, int id2, Date datum, Date rok_za_ponude, int nove_kolicine,
+		boolean nov_lek) {
+	super(cena, id_cenovnik, id, naziv, kolicina, id_zamenski, br_poena, vrsta_leka, oblik_leka, sastav, proizvodjac,
+			rezim_izdavanja, dodatne_napomene, alergeni);
+	id = id2;
 	this.datum = datum;
 	this.rok_za_ponude = rok_za_ponude;
 	this.nove_kolicine = nove_kolicine;
 	this.nov_lek = nov_lek;
 }
+
+
 
 
 }

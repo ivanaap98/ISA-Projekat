@@ -1,11 +1,18 @@
 package Model;
 
 public class Apoteka {
+  int id;
   String ime;
   String mesto;
   String adresa;
   String opis;
   float ocena;
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
 public String getIme() {
 	return ime;
 }
@@ -36,18 +43,14 @@ public float getOcena() {
 public void setOcena(float ocena) {
 	this.ocena = ocena;
 }
-@Override
-public String toString() {
-	return "Apoteka [ime=" + ime + ", mesto=" + mesto + ", adresa=" + adresa + ", opis=" + opis + ", ocena=" + ocena
-			+ "]";
-}
-public Apoteka(String ime, String mesto, String adresa, String opis, float ocena) {
+public Apoteka(int id, String ime, String mesto, String adresa, String opis, float ocena) {
 	super();
+	this.id = id;
 	this.ime = ime;
 	this.mesto = mesto;
 	this.adresa = adresa;
 	this.opis = opis;
 	this.ocena = ocena;
 }
-  
+
 }

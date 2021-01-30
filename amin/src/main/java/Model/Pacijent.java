@@ -2,22 +2,16 @@ package Model;
 
 import java.util.Date;
 
-public class Pacijent {
-    String ime;
-    String prezime;
-    Date datum_rodjenja;
-    int jmbg;
-    String adresa;
+public class Pacijent extends Korisnik {
+
+	String ime;
+	String prezime;
+	Date datum_rodjenja;
+	String jmbg;
+	String adresu;
     String alergeni;
     int penali;
     String pogodnosti;
-    
-    @Override
-	public String toString() {
-		return "Pacijent [ime=" + ime + ", prezime=" + prezime + ", datum_rodjenja=" + datum_rodjenja + ", jmbg=" + jmbg
-				+ ", adresa=" + adresa + ", alergeni=" + alergeni + ", penali=" + penali + ", pogodnosti=" + pogodnosti
-				+ "]";
-	}
 	public String getIme() {
 		return ime;
 	}
@@ -36,17 +30,17 @@ public class Pacijent {
 	public void setDatum_rodjenja(Date datum_rodjenja) {
 		this.datum_rodjenja = datum_rodjenja;
 	}
-	public int getJmbg() {
+	public String getJmbg() {
 		return jmbg;
 	}
-	public void setJmbg(int jmbg) {
+	public void setJmbg(String jmbg) {
 		this.jmbg = jmbg;
 	}
-	public String getAdresa() {
-		return adresa;
+	public String getAdresu() {
+		return adresu;
 	}
-	public void setAdresa(String adresa) {
-		this.adresa = adresa;
+	public void setAdresu(String adresu) {
+		this.adresu = adresu;
 	}
 	public String getAlergeni() {
 		return alergeni;
@@ -66,14 +60,20 @@ public class Pacijent {
 	public void setPogodnosti(String pogodnosti) {
 		this.pogodnosti = pogodnosti;
 	}
-	public Pacijent(String ime, String prezime, Date datum_rodjenja, int jmbg, String adresa, String alergeni,
+	@Override
+	public String toString() {
+		return "Pacijent [ime=" + ime + ", prezime=" + prezime + ", datum_rodjenja=" + datum_rodjenja + ", jmbg=" + jmbg
+				+ ", adresu=" + adresu + ", alergeni=" + alergeni + ", penali=" + penali + ", pogodnosti=" + pogodnosti
+				+ "]";
+	}
+	public Pacijent(String ime, String prezime, Date datum_rodjenja, String jmbg, String adresu, String alergeni,
 			int penali, String pogodnosti) {
 		super();
 		this.ime = ime;
 		this.prezime = prezime;
 		this.datum_rodjenja = datum_rodjenja;
 		this.jmbg = jmbg;
-		this.adresa = adresa;
+		this.adresu = adresu;
 		this.alergeni = alergeni;
 		this.penali = penali;
 		this.pogodnosti = pogodnosti;

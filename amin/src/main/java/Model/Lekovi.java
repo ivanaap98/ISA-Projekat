@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name="lekovi")
-public class Lekovi {
+public class Lekovi extends Cenovnik {
   @Id
   @GeneratedValue(strategy=GenerationType.IDENTITY)
   int id;
@@ -35,8 +35,12 @@ public class Lekovi {
   String dodatne_napomene;
 @Column(name="alergeni")
   String alergeni;
-public Lekovi() {
-	}
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
 public String getNaziv() {
 	return naziv;
 }
@@ -48,12 +52,6 @@ public int getKolicina() {
 }
 public void setKolicina(int kolicina) {
 	this.kolicina = kolicina;
-}
-public int getId() {
-	return id;
-}
-public void setId(int id) {
-	this.id = id;
 }
 public int getId_zamenski() {
 	return id_zamenski;
@@ -111,17 +109,18 @@ public void setAlergeni(String alergeni) {
 }
 @Override
 public String toString() {
-	return "Lekovi [naziv=" + naziv + ", kolicina=" + kolicina + ", id=" + id + ", id_zamenski=" + id_zamenski
+	return "Lekovi [id=" + id + ", naziv=" + naziv + ", kolicina=" + kolicina + ", id_zamenski=" + id_zamenski
 			+ ", br_poena=" + br_poena + ", vrsta_leka=" + vrsta_leka + ", oblik_leka=" + oblik_leka + ", sastav="
 			+ sastav + ", proizvodjac=" + proizvodjac + ", rezim_izdavanja=" + rezim_izdavanja + ", dodatne_napomene="
 			+ dodatne_napomene + ", alergeni=" + alergeni + "]";
 }
-public Lekovi(String naziv, int kolicina, int id, int id_zamenski, int br_poena, String vrsta_leka, String oblik_leka,
-		String sastav, String proizvodjac, boolean rezim_izdavanja, String dodatne_napomene, String alergeni) {
-	super();
+public Lekovi(int cena, int id_cenovnik, int id, String naziv, int kolicina, int id_zamenski, int br_poena,
+		String vrsta_leka, String oblik_leka, String sastav, String proizvodjac, boolean rezim_izdavanja,
+		String dodatne_napomene, String alergeni) {
+	super(cena, id_cenovnik);
+	this.id = id;
 	this.naziv = naziv;
 	this.kolicina = kolicina;
-	this.id = id;
 	this.id_zamenski = id_zamenski;
 	this.br_poena = br_poena;
 	this.vrsta_leka = vrsta_leka;
@@ -132,6 +131,6 @@ public Lekovi(String naziv, int kolicina, int id, int id_zamenski, int br_poena,
 	this.dodatne_napomene = dodatne_napomene;
 	this.alergeni = alergeni;
 }
-  
+
 
 }

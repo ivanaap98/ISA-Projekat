@@ -24,7 +24,7 @@ export default function Registracija(){
   }
   return(
 
- 	<form method="GET">
+ 	<form  method="POST" action="http://localhost:3000/Registracija">
            <label for="email">email <span></span></label>
             <input type="email" value={email} onChange={e => setEmail(e.target.value)}  name="email" id="email" placeholder="unesi svoj mail"/>
             <label for="pwd">password <span></span></label>

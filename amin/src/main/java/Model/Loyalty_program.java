@@ -1,9 +1,18 @@
 package Model;
 
+import java.util.Date;
+
 public class Loyalty_program {
+	int id;
   int poeni;
   String kategorija;
   int popust;
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
 public int getPoeni() {
 	return poeni;
 }
@@ -24,13 +33,15 @@ public void setPopust(int popust) {
 }
 @Override
 public String toString() {
-	return "Loyalty_program [poeni=" + poeni + ", kategorija=" + kategorija + ", popust=" + popust + "]";
+	return "Loyalty_program [id=" + id + ", poeni=" + poeni + ", kategorija=" + kategorija + ", popust=" + popust + "]";
 }
-public Loyalty_program(int poeni, String kategorija, int popust) {
+public Loyalty_program(int id, int poeni, String kategorija, int popust) {
 	super();
+	this.id = id;
 	this.poeni = poeni;
 	this.kategorija = kategorija;
 	this.popust = popust;
 }
-  
+
+
 }

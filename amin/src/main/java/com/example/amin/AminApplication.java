@@ -8,7 +8,7 @@ import org.springframework.boot.CommandLineRunner;
 
 
 @SpringBootApplication(exclude={DataSourceAutoConfiguration.class})
-public class AminApplication {
+public class AminApplication  {
 
 	public static void main(String[] args) {
 		SpringApplication.run(AminApplication.class, args);

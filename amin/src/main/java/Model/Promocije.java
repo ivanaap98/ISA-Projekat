@@ -3,10 +3,17 @@ package Model;
 import java.util.Date;
 
 public class Promocije {
+   int id;
   String opis;
   Date datum_od;
   Date datum_do;
   boolean odjava;
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
 public String getOpis() {
 	return opis;
 }
@@ -33,14 +40,17 @@ public void setOdjava(boolean odjava) {
 }
 @Override
 public String toString() {
-	return "Promocije [opis=" + opis + ", datum_od=" + datum_od + ", datum_do=" + datum_do + ", odjava=" + odjava + "]";
+	return "Promocije [id=" + id + ", opis=" + opis + ", datum_od=" + datum_od + ", datum_do=" + datum_do + ", odjava="
+			+ odjava + "]";
 }
-public Promocije(String opis, Date datum_od, Date datum_do, boolean odjava) {
+public Promocije(int id, String opis, Date datum_od, Date datum_do, boolean odjava) {
 	super();
+	this.id = id;
 	this.opis = opis;
 	this.datum_od = datum_od;
 	this.datum_do = datum_do;
 	this.odjava = odjava;
 }
+  
   
 }

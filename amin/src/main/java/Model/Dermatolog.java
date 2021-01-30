@@ -2,7 +2,7 @@ package Model;
 
 import java.util.Date;
 
-public class Dermatolog {
+public class Dermatolog extends Zaposleni {
 	  float ocena;
 	  Date radni_kalendar;
 	public float getOcena() {
@@ -21,9 +21,10 @@ public class Dermatolog {
 	public String toString() {
 		return "Dermatolog [ocena=" + ocena + ", radni_kalendar=" + radni_kalendar + "]";
 	}
-	public Dermatolog(float ocena, Date radni_kalendar) {
-		super();
+	public Dermatolog(String ime, String prezime, String uloga, float ocena, Date radni_kalendar) {
+		super(ime, prezime, uloga);
 		this.ocena = ocena;
 		this.radni_kalendar = radni_kalendar;
 	}
+	
 }
