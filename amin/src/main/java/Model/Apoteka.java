@@ -1,11 +1,29 @@
 package Model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="apoteke")
 public class Apoteka {
+  @Id
+  @GeneratedValue(strategy=GenerationType.IDENTITY)
   int id;
+ @Column(name="ime")
   String ime;
+ @Column(name="mesto")
   String mesto;
+ @Column(name="adresa")
   String adresa;
+ @Column(name="grad")
+ String grad;
+ @Column(name="opis")
   String opis;
+ @Column(name="ocena")
   float ocena;
 public int getId() {
 	return id;
@@ -31,6 +49,12 @@ public String getAdresa() {
 public void setAdresa(String adresa) {
 	this.adresa = adresa;
 }
+public String getGrad() {
+	return grad;
+}
+public void setGrad(String grad) {
+	this.grad = grad;
+}
 public String getOpis() {
 	return opis;
 }
@@ -43,12 +67,18 @@ public float getOcena() {
 public void setOcena(float ocena) {
 	this.ocena = ocena;
 }
-public Apoteka(int id, String ime, String mesto, String adresa, String opis, float ocena) {
+@Override
+public String toString() {
+	return "Apoteka [id=" + id + ", ime=" + ime + ", mesto=" + mesto + ", adresa=" + adresa + ", grad=" + grad
+			+ ", opis=" + opis + ", ocena=" + ocena + "]";
+}
+public Apoteka(int id, String ime, String mesto, String adresa, String grad, String opis, float ocena) {
 	super();
 	this.id = id;
 	this.ime = ime;
 	this.mesto = mesto;
 	this.adresa = adresa;
+	this.grad = grad;
 	this.opis = opis;
 	this.ocena = ocena;
 }

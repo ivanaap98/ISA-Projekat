@@ -1,8 +1,17 @@
 package Model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="zaposleni")
 public class Zaposleni extends Korisnik {
+	@Column(name="ime")
     String ime;
+	@Column(name="prezime")
     String prezime;
+	@Column(name="uloga")
 	String Uloga;
 	public String getIme() {
 		return ime;

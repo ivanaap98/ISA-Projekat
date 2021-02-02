@@ -13,10 +13,15 @@ public class Izvestaji {
  @Id
  @GeneratedValue(strategy=GenerationType.IDENTITY)
  int id; 
+ @Column(name="opis")
  String opis;
+ @Column(name="datum")
   Date datum;
+ @Column(name="izostanak")
   boolean izostanak;
+ @Column(name="trajanje_terapije")
   String trajanje_terapije;
+ @Column(name="sledeca_poseta")
   boolean sledeca_poseta;
 public int getId() {
 	return id;

@@ -2,10 +2,24 @@ package Model;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="loyalty_program")
 public class Loyalty_program {
-	int id;
+  @Id
+  @GeneratedValue(strategy=GenerationType.IDENTITY)
+  int id;
+  @Column(name="poeni")
   int poeni;
+  @Column(name="kategorija")
   String kategorija;
+  @Column(name="popust")
   int popust;
 public int getId() {
 	return id;

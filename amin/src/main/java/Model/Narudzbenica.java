@@ -2,6 +2,7 @@ package Model;
 
 import java.util.Date;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -13,9 +14,13 @@ public class Narudzbenica extends Lekovi {
   @Id
   @GeneratedValue(strategy=GenerationType.IDENTITY)
   int id;
+  @Column(name="datum")
   Date datum;
+  @Column(name="rok_za_ponude")
   Date rok_za_ponude;
+  @Column(name="nove_kolicine")
   int nove_kolicine;
+  @Column(name="nov_lek")
   boolean nov_lek;
 public int getId() {
 	return id;

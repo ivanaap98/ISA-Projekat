@@ -1,8 +1,16 @@
 package Model;
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="farmaceuti")
 public class Farmaceut extends Zaposleni {
+  @Column(name="ocena")
   float ocena;
+  @Column(name="radni_kalendar")
   Date radni_kalendar;
 public float getOcena() {
 	return ocena;

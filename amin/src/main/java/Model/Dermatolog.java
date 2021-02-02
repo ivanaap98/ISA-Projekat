@@ -2,8 +2,18 @@ package Model;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+@Table(name="dermatolozi")
 public class Dermatolog extends Zaposleni {
+	 @Column(name="ocena")
 	  float ocena;
+	 @Column(name="radni_kalendar")
 	  Date radni_kalendar;
 	public float getOcena() {
 		return ocena;

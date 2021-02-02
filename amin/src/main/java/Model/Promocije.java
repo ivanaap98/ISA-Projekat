@@ -2,11 +2,26 @@ package Model;
 
 import java.util.Date;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="promocije")
 public class Promocije {
+    @Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
    int id;
-  String opis;
-  Date datum_od;
-  Date datum_do;
+   @Column(name="opis")
+   String opis;
+   @Column(name="datum_od")
+   Date datum_od;
+   @Column(name="datum_do")
+   Date datum_do;
+   @Column(name="odjava")
   boolean odjava;
 public int getId() {
 	return id;
