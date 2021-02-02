@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value="/Registracija")
+@RequestMapping(value="/Hello")
 public class Hello {
 	@PostMapping()
     public ResponseEntity<?> print(@RequestBody String[] args) {

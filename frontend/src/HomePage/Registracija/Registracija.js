@@ -15,7 +15,7 @@ export default function Registracija(){
    function registracija() {
     axios({
     method:'post',
-    url:'http://localhost:8081/Registracija' ,
+    url:'http://localhost:8080/Registracija' ,
     data:{ 
       'email':email,
       'password':password ,
@@ -48,5 +48,6 @@ export default function Registracija(){
             <input type="text" name="grad" onChange={e => setGrad(e.target.value)} id="grad" placeholder="upisi grad"/>
             <input type='submit' onClick=  {registracija} />
         </form>
-  ) 
+  )
+ 
 }
