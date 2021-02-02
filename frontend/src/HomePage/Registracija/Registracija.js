@@ -13,18 +13,25 @@ export default function Registracija(){
  const [grad,setGrad] = useState('');
  
    function registracija() {
-    axios.post(`http://localhost:8080/Registracija`, { email })
-      .then(res => {
-        console.log(res);
-        console.log(res.data);
-      })
-  }
+    axios({
+    method:'post',
+    url:'http://localhost:8081/Registracija' ,
+    data:{ 
+      'email':email,
+      'password':password ,
+      'ime':ime,
+      'prezime':prezime,
+      'phone':phone,
+      'adresa':adresa,
+      'grad':grad
+    }});}
+    
  if (email === 'open sesame') {
     alert('You may pass!');
   }
   return(
 
- 	<form  method="POST" action="http://localhost:3000/Registracija">
+ 	<form>
            <label for="email">email <span></span></label>
             <input type="email" value={email} onChange={e => setEmail(e.target.value)}  name="email" id="email" placeholder="unesi svoj mail"/>
             <label for="pwd">password <span></span></label>
@@ -41,6 +48,5 @@ export default function Registracija(){
             <input type="text" name="grad" onChange={e => setGrad(e.target.value)} id="grad" placeholder="upisi grad"/>
             <input type='submit' onClick=  {registracija} />
         </form>
-  )
-  
+  ) 
 }
