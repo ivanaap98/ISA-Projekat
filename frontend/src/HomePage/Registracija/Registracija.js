@@ -1,5 +1,4 @@
 import React,{useState} from 'react';
-import  "./Reg.css";
 import axios from 'axios'
 
 export default function Registracija(){
@@ -26,12 +25,10 @@ export default function Registracija(){
       'grad':grad
     }});}
     
- if (email === 'open sesame') {
-    alert('You may pass!');
-  }
   return(
 
- 	<form>
+    <main id="background" className="bg-fixed h-screen w-screen">
+        <form>
            <label for="email">email <span></span></label>
             <input type="email" value={email} onChange={e => setEmail(e.target.value)}  name="email" id="email" placeholder="unesi svoj mail"/>
             <label for="pwd">password <span></span></label>
@@ -48,6 +45,7 @@ export default function Registracija(){
             <input type="text" name="grad" onChange={e => setGrad(e.target.value)} id="grad" placeholder="upisi grad"/>
             <input type='submit' onClick=  {registracija} />
         </form>
+      </main>
   )
  
 }
