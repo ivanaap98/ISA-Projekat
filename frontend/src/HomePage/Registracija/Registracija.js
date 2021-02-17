@@ -28,23 +28,58 @@ export default function Registracija(){
   return(
 
     <main id="background" className="bg-fixed h-screen w-screen">
-        <form>
-           <label for="email">email <span></span></label>
-            <input type="email" value={email} onChange={e => setEmail(e.target.value)}  name="email" id="email" placeholder="unesi svoj mail"/>
-            <label for="pwd">password <span></span></label>
-            <input type="password" name="pwd" onChange={e => setPass(e.target.value)} id='pwd'placeholder="unesi svoju sifru"/>
-            <label for="ime">Ime <span></span></label>
-            <input type="text" name="ime" onChange={e => setIme(e.target.value)} id="ime" placeholder="upisi svoje ime"/>
-            <label for="prezime">Prezime <span></span></label>
-            <input type="text" name="prezime" onChange={e => setPrezime(e.target.value)} id="prezime" placeholder="upisi svoje prezime"/>
-            <label for="phone">Telefon <span></span></label>
-            <input type="text" name="phone" onChange={e => setPhone(e.target.value)} id="phone" placeholder="upisi svoj telefon"/>
-            <label for="adresa">Adresa <span></span></label>
-            <input type="text" name="adresa" onChange={e => setAdresa(e.target.value)} id="adresa" placeholder="upisi adresu"/>
-            <label for="grad">Grad <span></span></label>
-            <input type="text" name="grad" onChange={e => setGrad(e.target.value)} id="grad" placeholder="upisi grad"/>
-            <input type='submit' onClick=  {registracija} />
-        </form>
+        
+        <div
+      style={{
+        position : 'absolute', left : '50%', top : '50%',
+        transform : 'translate(-50%, -40%)'
+      }}>
+
+      <form className="items-center bg-gradient-to-r from-blue-300 to-blue-900 w-full h-full font-black text-black flex flex-col text-sm">
+
+        <div className="my-6 text-center w-5/6"> 
+          <label for="email" className="text-white">Email : </label>
+          <input className="h-6 shadow appearance-none border rounded w-full py-1 px-3 text-grey-darker" type="email" name="email" id="email" placeholder="unesite email"/>
+        </div>
+
+        <div className="mb-6 text-center w-5/6">
+          <label for="pwd" className="text-white">Lozinka :</label>
+          <input className="h-6 shadow appearance-none border rounded w-full py-1 px-3 text-grey-darker" type="password" name="pwd" id='pwd'placeholder="unesite lozinku"/>
+        </div>
+
+        <div className="mb-6 text-center w-5/6">
+          <label for="ime" className="text-white">Ime :</label>
+          <input className="h-6 shadow appearance-none border rounded w-full py-1 px-3 text-grey-darker" type="text" name="ime" id='ime'placeholder="unesite ime"/>
+        </div>
+
+        <div className="mb-6 text-center w-5/6">
+          <label for="prezime" className="text-white">Prezime :</label>
+          <input className="h-6 shadow appearance-none border rounded w-full py-1 px-3 text-grey-darker" type="text" name="text" id='prezime'placeholder="unesite prezime"/>
+        </div>
+
+        <div className="mb-6 text-center w-5/6">
+          <label for="telefon" className="text-white">Telefon :</label>
+          <input className="h-6 shadow appearance-none border rounded w-full py-1 px-3 text-grey-darker" type="number" name="telefon" id='telefon'placeholder="unesite telefon"/>
+        </div>
+
+        <div className="mb-6 text-center w-5/6">
+          <label for="adresa" className="text-white">Adresa :</label>
+          <input className="h-6 shadow appearance-none border rounded w-full py-1 px-3 text-grey-darker" type="text" name="adresa" id='adresa'placeholder="unesite adresu"/>
+        </div>
+
+        <div className="mb-6 text-center w-5/6">
+          <label for="grad" className="text-white">Grad :</label>
+          <input className="h-6 shadow appearance-none border rounded w-full py-1 px-3 text-grey-darker" type="text" name="grad" id='grad'placeholder="unesite grad"/>
+        </div>
+
+        <div>
+          <button className="bg-gradient-to-r from-blue-300 to-blue-900 text-1xl border rounded font-black text-white w-32 h-4/5 mb-4 items-center justify-between" type='submit' value='login'>Potvrdi</button>
+        </div>
+
+      </form>
+
+      </div>
+        
       </main>
   )
  
