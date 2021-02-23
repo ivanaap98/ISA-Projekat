@@ -6,10 +6,9 @@ import SideBar from './AdminSideBar';
 
 export default function NavBar() {
     return (
-        <main id="background" className="bg-fixed h-screen w-screen">
-        <InzSistemaNavBar/>
-        <SideBar/>
-           
+        <main id="background" className="bg-fixed h-full w-full">
+            <InzSistemaNavBar/>
+            <SideBar/>
         </main>
     
     )
