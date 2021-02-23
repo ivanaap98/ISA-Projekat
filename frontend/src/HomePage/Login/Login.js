@@ -1,10 +1,11 @@
 import React from "react"
 import "../landingPage.css";
+import NavBar from "../NavBar";
 
 export default function Login() {
   return (
     <main id="background" className="z-0 bg-fixed h-screen w-screen">
-      
+      <NavBar/>      
 
       <div
       style={{

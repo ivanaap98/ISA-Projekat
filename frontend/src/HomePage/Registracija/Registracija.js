@@ -1,5 +1,6 @@
 import React,{useState} from 'react';
 import axios from 'axios'
+import NavBar from "../NavBar";
 
 export default function Registracija(){
  
@@ -28,7 +29,8 @@ export default function Registracija(){
   return(
 
     <main id="background" className="bg-fixed h-screen w-screen">
-        
+        <NavBar/>
+
         <div
       style={{
         position : 'absolute', left : '50%', top : '50%',

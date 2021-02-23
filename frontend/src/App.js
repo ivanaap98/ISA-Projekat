@@ -7,17 +7,21 @@ import PretragaApoteka from "./HomePage/PretragaApoteka";
 import PretragaLekova from "./HomePage/PretragaLekova";
 import Login from "./HomePage/Login/Login"
 import NavBar from "./HomePage/NavBar";
+import AdminSistemaHomePage from "./InzenjerSistemaHomePage/HomePage";
+import PacijentHomePage from "./PacijentHomePage/HomePage";
+
 
 function App() {
   return (
        <BrowserRouter>
-       <NavBar/>
 	       <Switch>
 		          <Route component={Home} path='/' exact />
 		          <Route component={Registracija} path='/Registracija'  />
 		          <Route component={PretragaApoteka} path='/PretragaApoteka' />
 		          <Route component={PretragaLekova} path='/PretragaLekova'  />
 		          <Route component={Login} path='/Login' />
+		          <Route component={PacijentHomePage} path='/Pacijent' />
+		          <Route component={AdminSistemaHomePage} path='/AdminSistema' />
 		    </Switch>
        </BrowserRouter>
   );
