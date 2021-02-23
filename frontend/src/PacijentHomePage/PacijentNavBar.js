@@ -8,9 +8,9 @@ export default function PacijentNavBar() {
       	<div className="container mx-auto flex justify-between text-2xl">
       	 	<nav className="w-full">
       	 		
-               <NavLink to="Login" activeClassName="text-red-100 bg-blue-700" className="italic font-mono float-left inline-flex items-center px-3 py-3 font-black rounded text-white">
+               	<h1 className="text-blue-900 italic font-mono float-left inline-flex items-center px-3 py-3 font-black rounded text-white">
 			  		Pacijent 
-				</NavLink>
+				</h1>
 
 				<NavLink to="Login" activeClassName="text-red-100 bg-blue-700" className="float-right inline-flex items-center px-3 py-3 font-black rounded text-white">
 			  		Izloguj se 
