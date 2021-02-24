@@ -9,6 +9,5 @@ export default function PacijentHomePage() {
         <PacijentNavBar/>
         <PacijentSideBar/>
       </main>
-    
     )
 }
