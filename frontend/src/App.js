@@ -1,12 +1,9 @@
-
-import axios from 'axios';
 import { BrowserRouter,Route,Switch} from "react-router-dom"
 import Home from "./HomePage/Home";
 import Registracija from "./HomePage/Registracija/Registracija";
 import PretragaApoteka from "./HomePage/PretragaApoteka";
 import PretragaLekova from "./HomePage/PretragaLekova";
 import Login from "./HomePage/Login/Login"
-import NavBar from "./HomePage/NavBar";
 import AdminApotekeHomePage from "./AdminApotekeHomePage/AdminApotekeHomePage";
 import PacijentHomePage from "./PacijentHomePage/PacijentHomePage";
 

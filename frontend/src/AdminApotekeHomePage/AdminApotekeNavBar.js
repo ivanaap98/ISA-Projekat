@@ -8,7 +8,7 @@ export default function AdminApotekeNavBar() {
       	<div className="container mx-auto flex justify-between text-2xl">
       	 	<nav className="w-full">
 
-               <h1 className="italic text-blue-900 font-mono float-left inline-flex items-center px-3 py-3 font-black rounded text-white">
+               	<h1 className="italic text-blue-900 font-mono float-left inline-flex items-center px-3 py-3 font-black rounded text-white">
 			  		Administrator apoteke
 				</h1>
       	 		

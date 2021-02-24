@@ -1,41 +1,19 @@
-import React,{useState} from 'react';
-import axios from 'axios'
+import React from 'react';
 import NavBar from "../NavBar";
+import "../landingPage.css";
 
 export default function Registracija(){
- 
- const [email, setEmail] = useState('');
- const [password,setPass] = useState('');
- const [ime, setIme] = useState('');
- const [prezime,setPrezime] = useState('');
- const [phone, setPhone] = useState('');
- const [adresa,setAdresa] = useState('');
- const [grad,setGrad] = useState('');
- 
-   function registracija() {
-    axios({
-    method:'post',
-    url:'http://localhost:8080/Registracija' ,
-    data:{ 
-      'email':email,
-      'password':password ,
-      'ime':ime,
-      'prezime':prezime,
-      'phone':phone,
-      'adresa':adresa,
-      'grad':grad
-    }});}
     
   return(
 
-    <main id="background" className="bg-fixed h-screen w-screen">
-        <NavBar/>
+        <main id="background" className="bg-fixed h-screen w-screen">
+          <NavBar/>
 
         <div
-      style={{
-        position : 'absolute', left : '50%', top : '50%',
+        style={{
+        position : 'absolute', left : '50%', top : '45%',
         transform : 'translate(-50%, -40%)'
-      }}>
+        }}>
 
       <form className="items-center bg-gradient-to-r from-blue-300 to-blue-900 w-full h-full font-black text-black flex flex-col text-sm">
 

@@ -4,7 +4,7 @@ import NavBar from "./NavBar";
 
 export default function Home() {
   return (
-    <main id="background" className="w-screen h-screen bg-fixed">
+    <main id="background" className="w-full h-full bg-fixed">
       <NavBar/>
     
     </main>
