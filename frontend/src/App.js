@@ -7,8 +7,8 @@ import PretragaApoteka from "./HomePage/PretragaApoteka";
 import PretragaLekova from "./HomePage/PretragaLekova";
 import Login from "./HomePage/Login/Login"
 import NavBar from "./HomePage/NavBar";
-import AdminSistemaHomePage from "./InzenjerSistemaHomePage/HomePage";
-import PacijentHomePage from "./PacijentHomePage/HomePage";
+import AdminApotekeHomePage from "./AdminApotekeHomePage/AdminApotekeHomePage";
+import PacijentHomePage from "./PacijentHomePage/PacijentHomePage";
 
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
 		          <Route component={PretragaLekova} path='/PretragaLekova'  />
 		          <Route component={Login} path='/Login' />
 		          <Route component={PacijentHomePage} path='/Pacijent' />
-		          <Route component={AdminSistemaHomePage} path='/AdminSistema' />
+		          <Route component={AdminApotekeHomePage} path='/AdminApoteke' />
 		    </Switch>
        </BrowserRouter>
   );
