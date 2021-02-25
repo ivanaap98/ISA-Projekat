@@ -22,13 +22,13 @@ export default function PacijentHomePage() {
 
           <Switch>
 		        <Route component={Apoteke} path='/Pacijent/Apoteke' />
-		        <Route component={ERecepti} path='Pacijent/ERecepti' />
-            <Route component={IstorijaPosetaDermatologu} path='/Pacijent/Farmaceuti' /> 
+		        <Route component={ERecepti} path='/Pacijent/ERecepti' />
+            <Route component={IstorijaPosetaDermatologu} path='/Pacijent/IstorijaPosetaDermatologu' /> 
             <Route component={Penali} path='/Pacijent/Penali' />
             <Route component={RezervisaniLekovi} path='/Pacijent/RezervisaniLekovi' />
             <Route component={SavetovanjeKodFarmaceuta} path='/Pacijent/SavetovanjeKodFarmaceuta' />
             <Route component={ZakazanePosete} path='/Pacijent/ZakazanePosete' />
-            <Route component={Zalbe} path='/Pacijent/Zalbe' />
+            <Route component={Zalbe} path='/Pacijent/Zalbe/' />
           </Switch>
 
         </BrowserRouter>
