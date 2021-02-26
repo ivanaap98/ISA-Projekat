@@ -11,6 +11,7 @@ import RezervisaniLekovi from "./RezervisaniLekovi/RezervisaniLekovi";
 import SavetovanjeKodFarmaceuta from "./SavetovanjeKodFarmaceuta/SavetovanjeKodFarmaceuta";
 import ZakazanePosete from "./ZakazanePosete/ZakazanePosete";
 import Zalbe from "./Zalbe/Zalbe";
+import AzurirajPodatke from "./AzurirajPodatke";
 
 export default function PacijentHomePage() {
     return (
@@ -21,6 +22,7 @@ export default function PacijentHomePage() {
           <PacijentSideBar/>
 
           <Switch>
+            <Route component={AzurirajPodatke} path='/Pacijent/AzurirajPodatke' />
 		        <Route component={Apoteke} path='/Pacijent/Apoteke' />
 		        <Route component={ERecepti} path='/Pacijent/ERecepti' />
             <Route component={IstorijaPosetaDermatologu} path='/Pacijent/IstorijaPosetaDermatologu' /> 
