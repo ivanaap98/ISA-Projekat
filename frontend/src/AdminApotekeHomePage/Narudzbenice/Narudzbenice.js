@@ -1,5 +1,12 @@
 export default function Narudzbenice(){
     return (
-        <h1>Narudzbenice</h1>
+        <div
+        style={{
+        position : 'absolute', left : '50%', top : '45%',
+        transform : 'translate(-50%, -40%)'
+        }}>
+
+            <h1>Narudzbenice</h1>
+        </div>
     )
 }

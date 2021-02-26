@@ -12,7 +12,6 @@ import Narudzbenice from "./Narudzbenice/Narudzbenice";
 import SlobodniTermini from "./Slobodni Termini/SlobodniTermini";
 import Upiti from "./Upiti/Upiti";
 
-
 export default function AdminApotekeHomePage() {
     return (
         <main id="background" className="bg-fixed h-full w-full">
@@ -21,16 +20,17 @@ export default function AdminApotekeHomePage() {
                 <AdminApotekeNavBar/>
                 <AdminApotekeSideBar/>
 	            
-                <Switch>
-		            <Route component={AkcijePromocije} path='/AdminApoteke/AkcijePromocije' />
-		            <Route component={Dermatolozi} path='/AdminApoteke/Dermatolozi' />
-                    <Route component={Farmaceuti} path='/AdminApoteke/Farmaceuti' />
-                    <Route component={Izvestaji} path='/AdminApoteke/Izvestaji'  />
-                    <Route component={Lekovi} path='/AdminApoteke/Lekovi' />
-                    <Route component={Narudzbenice} path='/AdminApoteke/Narudzbenice' />
-                    <Route component={SlobodniTermini} path='/AdminApoteke/SlobodniTermini' />
-                    <Route component={Upiti} path='/AdminApoteke/Upiti' />
-		        </Switch>
+                    <Switch>
+                        <Route component={AkcijePromocije} path='/AdminApoteke/AkcijePromocije' />
+                        <Route component={Dermatolozi} path='/AdminApoteke/Dermatolozi' />
+                        <Route component={Farmaceuti} path='/AdminApoteke/Farmaceuti' />
+                        <Route component={Izvestaji} path='/AdminApoteke/Izvestaji'  />
+                        <Route component={Lekovi} path='/AdminApoteke/Lekovi' />
+                        <Route component={Narudzbenice} path='/AdminApoteke/Narudzbenice' />
+                        <Route component={SlobodniTermini} path='/AdminApoteke/SlobodniTermini' />
+                        <Route component={Upiti} path='/AdminApoteke/Upiti' />
+                    </Switch>
+
              </BrowserRouter>
         </main>
     
