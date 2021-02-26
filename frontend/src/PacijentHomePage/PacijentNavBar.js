@@ -14,7 +14,7 @@ export default function PacijentNavBar() {
 			  		Izloguj se 
 				</NavLink>
 
-				<NavLink to="Nesto" activeClassName="text-red-100 bg-blue-700" className="h-12 float-right inline-flex items-center px-3 py-3 font-black rounded text-white">
+				<NavLink to="AzurirajPodatke" activeClassName="text-red-100 bg-blue-700" className="h-12 float-right inline-flex items-center px-3 py-3 font-black rounded text-white">
 			    	Azuriraj podatke
 				</NavLink>
 
