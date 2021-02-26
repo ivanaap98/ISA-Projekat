@@ -20,7 +20,7 @@ export default function AdminApotekeNavBar() {
 			    	Azuriraj podatke
 				</NavLink>
 
-                <NavLink to="AdminApoteke" exact activeClassName="text-red-100 bg-blue-700" className="h-12 float-right inline-flex items-center px-3 py-3 font-black rounded text-white">
+                <NavLink to="/AdminApoteke" exact activeClassName="text-red-100 bg-blue-700" className="h-12 float-right inline-flex items-center px-3 py-3 font-black rounded text-white">
                     Pocetna
       	 		</NavLink>
 

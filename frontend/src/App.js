@@ -7,7 +7,6 @@ import Login from "./HomePage/Login/Login"
 import AdminApotekeHomePage from "./AdminApotekeHomePage/AdminApotekeHomePage";
 import PacijentHomePage from "./PacijentHomePage/PacijentHomePage";
 
-
 function App() {
   return (
        <BrowserRouter>
@@ -17,8 +16,8 @@ function App() {
 		          <Route component={PretragaApoteka} path='/PretragaApoteka' />
 		          <Route component={PretragaLekova} path='/PretragaLekova'  />
 		          <Route component={Login} path='/Login' />
-		          <Route component={PacijentHomePage} path='/Pacijent' />
-		          <Route component={AdminApotekeHomePage} path='/AdminApoteke' />
+		          <Route component={PacijentHomePage} path='/Pacijent/' />
+		          <Route component={AdminApotekeHomePage} path='/AdminApoteke/' />
 		    </Switch>
        </BrowserRouter>
   );
