@@ -11,7 +11,7 @@ export default function PacijentSideBar() {
             Savetovanje kod farmaceuta
         </NavLink>
 
-        <NavLink to="IstorijaPosetaDermatologu/" className="transform -skew-x-12 border-opacity-30 border-b-8 border-white shadow-2xl my-2">
+        <NavLink to="IstorijaPosetaDermatologu" className="transform -skew-x-12 border-opacity-30 border-b-8 border-white shadow-2xl my-2">
             Istorija poseta dermatologu
         </NavLink>
 

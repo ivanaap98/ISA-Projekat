@@ -11,6 +11,7 @@ import Lekovi from "./Lekovi/Lekovi";
 import Narudzbenice from "./Narudzbenice/Narudzbenice";
 import SlobodniTermini from "./Slobodni Termini/SlobodniTermini";
 import Upiti from "./Upiti/Upiti";
+import AzurirajPodatke from "./AzurirajPodatke";
 
 export default function AdminApotekeHomePage() {
     return (
@@ -20,7 +21,9 @@ export default function AdminApotekeHomePage() {
                 <AdminApotekeNavBar/>
                 <AdminApotekeSideBar/>
 	            
+
                     <Switch>
+                        <Route component={AzurirajPodatke} path='/AdminApoteke/AzurirajPodatke' />     
                         <Route component={AkcijePromocije} path='/AdminApoteke/AkcijePromocije' />
                         <Route component={Dermatolozi} path='/AdminApoteke/Dermatolozi' />
                         <Route component={Farmaceuti} path='/AdminApoteke/Farmaceuti' />
@@ -30,7 +33,7 @@ export default function AdminApotekeHomePage() {
                         <Route component={SlobodniTermini} path='/AdminApoteke/SlobodniTermini' />
                         <Route component={Upiti} path='/AdminApoteke/Upiti' />
                     </Switch>
-
+      
              </BrowserRouter>
         </main>
     
