@@ -11,10 +11,7 @@ public class KorisnikDTO {
 	private Integer id;
 	private String ime;
 	private String prezime;
-	private String uloga;
-	private String jmbg;
-	private Date datum_rodjenja;
-	private String adresa;
+
 	private String grad;
 	private String telefon;
 	
@@ -25,10 +22,7 @@ public class KorisnikDTO {
 		this.id = id;
 		this.ime=ime;
 		this.prezime=prezime;
-		this.uloga=uloga;
-		this.jmbg=jmbg;
-		this.datum_rodjenja=datum_rodjenja;
-		this.adresa=adresa;
+
 		this.grad=grad;
 		this.telefon=telefon;
 	}
@@ -39,10 +33,6 @@ public class KorisnikDTO {
 		this.password = "";
 		this.ime="";
 		this.prezime="";
-		this.uloga="";
-		this.jmbg="";
-		this.datum_rodjenja=null;
-		this.adresa="";
 		this.grad="";
 		this.telefon="";
 	}
@@ -55,10 +45,7 @@ public class KorisnikDTO {
 		this.password =korisnik.getLozinka();
 		this.ime=korisnik.getIme();
 		this.prezime=korisnik.getPrezime();
-		this.uloga=korisnik.getUloga();
-		this.jmbg=korisnik.getJmbg();
-		this.datum_rodjenja=korisnik.getDatum_rodjenja();
-		this.adresa=korisnik.getAdresa();
+
 		this.grad=korisnik.getGrad();
 	}
 	
